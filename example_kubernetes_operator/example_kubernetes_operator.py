@@ -11,8 +11,8 @@ with DAG(
     tags=["example"],
 ) as dag:
   example_kubernetes_operator = KubernetesPodOperator(
-    name="run-samba", 
-    task_id="samba",
+    name="kubernetes_operator", 
+    task_id="kubernetes_operator,
     # namespace="my-namespace",
     # Specify the name of the pod template file to run on schedule
     pod_template_file=os.path.join(os.path.abspath(os.path.dirname(__file__)), 'template.yaml'),
