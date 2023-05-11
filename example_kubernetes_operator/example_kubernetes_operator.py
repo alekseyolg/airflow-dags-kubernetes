@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 with DAG(
-    dag_id="example-kubernetes-operator",
+    dag_id="example_kubernetes_operator",
     schedule=None,
     start_date=datetime.now(),
     catchup=False,
@@ -21,4 +21,4 @@ with DAG(
     get_logs=True,
 )
 # Submit for execution
-example-kubernetes-operator
+example_kubernetes_operator
