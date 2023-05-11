@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-kubernetes-operator
+spec:
+  containers:
+  - name: base
+    image: ubuntu:jammy-20230425
+    imagePullPolicy: IfNotPresent
+    command: ["bash", "-c", "echo 'Hello, world!' && sleep 600"]
+  restartPolicy: Never
