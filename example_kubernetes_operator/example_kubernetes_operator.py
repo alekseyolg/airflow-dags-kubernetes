@@ -10,7 +10,7 @@ with DAG(
     catchup=False,
     tags=["example"],
 ) as dag:
-  example-kubernetes-operator = KubernetesPodOperator(
+  example_kubernetes_operator = KubernetesPodOperator(
     name="run-samba", 
     task_id="samba",
     # namespace="my-namespace",
