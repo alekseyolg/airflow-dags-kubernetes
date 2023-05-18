@@ -8,5 +8,5 @@ spec:
   - name: base
     image: ubuntu:jammy-20230425
     imagePullPolicy: IfNotPresent
-    command: ["bash", "-c", "echo 'Hello, world!' && sleep 600"]
+    command: ["bash", "-cx", "echo 'Hello, world!' && sleep 600"]
   restartPolicy: Never
